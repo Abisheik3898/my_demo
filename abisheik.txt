@@ -1,2 +1,137 @@
 hii
 hello iam abisheik
+
+
+//for loop
+
+//print 1 to 10
+for( let i = 0; i<=10; i++){
+    console.log(i)
+}
+
+//even number
+for( let i = 0; i<=10; i+=1){
+    console.log(i)
+}
+
+//write a java script prog to find this sum of num for 1 to n using of for looping 
+//write a java script to prog to print multi of 5 from 1 to 50
+//write a java script program to check wheater a given number is a palentrom or not
+//write a java script program to print all numbers divisble by 3 between 1 and n find the factorial of the given number
+
+
+//for 
+let arr = [10,20,30,40,50,60,70]
+for(let i = 0; i < arr.length; i+=1){
+    console.log(arr[i])
+}
+
+// for-of => in for-of method the interator will directly hold the element not the index number
+for(let i of arr){
+    console.log(i)
+}
+
+
+// for-in
+// ?  i =>will hold the keys
+// ?  object[i] =>will hold on the values
+
+let personalDeatils = {
+    Name : "Abisheik",
+    age : 21,
+    address : "Salem Idappadi",
+    gender : "Male",
+    contact : 8344340143,
+    status : "single",
+    isAvailable : true
+
+}
+
+for(let i in personalDeatils){
+    console.log(i,":",personalDeatils[i])
+}
+
+
+// //while
+// let i = 0;   //! Initalization
+// while(i <= 20){
+//     console.log(i)
+//     i++     //! Updation
+// }
+
+//do-while
+let i = 15;
+do{
+    console.log(i)
+    i+=1
+}
+while(i <= 25)
+
+
+//////////FUNCTIONS///////////
+//!=> 1) Named function
+//!=> 1) Anonymous function
+//!=> 1) Arrow function
+//!=> 1) Bulit-in function
+//!=> 1) IIFE function
+//!=> 1) Call-back function
+//!=> 1) Higher-ordered function
+/////////////////////////////
+
+//! 1) Named function
+// function display(){
+//     console.log("Thalapathy is next PN in india")
+// }
+// display()
+
+//! 2) Anonymous function
+// let display = function(){
+//     console.log("Thalapathy is next PN in india")
+// }
+// display()
+
+//! 3) Arrow function
+let display = ()=>{
+    console.log("Thalapathy is next PN in india")
+}
+display()
+
+Function with default parameter
+    =>default parameter are used when we are not passing any value or aurgement during the function call, 
+default parameter helps to store the value if the value not given
+    =>default parameter will be having the least peoity if the arugenmet will be pass
+    =>default paraemeter must be given from 2nd parameter
+    =>why? if give the defulat parament for the first parameter,furing the function call if we pass the arugement
+the value is not store in the second paremeter it will overwrite the defualt parameter will get the output NaN
+    =>if yoy don't pass any defalut paraments and if their are two paremeter if we pass only two paraeter furing the function call
+if we store only one value for the first paremeter then it will some arithimetic operation we will get output NaN(not a number)
+
+function sum(a, b = 5){
+    console.log(a + b)
+}
+sum(10,20)
+sum(10,15)
+sum(10)
+
+
+//NOTE//
+example
+ sum(15,10)
+    function sum(a , b){
+     console.log(a + b)
+    }
+
+Anonymous function
+     =>in the above example is the function is beem called before defining the function and will get the output as expected beacuse here we are using function delecration so 
+*function delcreation can support hoistring or function hoistring can be done using fuction delcration
+
+example
+    sum(15,10)
+    function sum(a , b)=>{
+     console.log(a + b)
+    }
+
+Arrow function
+
+
+
